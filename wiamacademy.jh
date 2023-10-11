@@ -1,0 +1,2740 @@
+
+DEFAULT_MAX_LENGTH = 50
+entity Accounting{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+userId String required maxlength(DEFAULT_MAX_LENGTH) 
+creatorId String required maxlength(DEFAULT_MAX_LENGTH) 
+orderItemId String required maxlength(DEFAULT_MAX_LENGTH) 
+webinarId String required maxlength(DEFAULT_MAX_LENGTH) 
+bundleId String required maxlength(DEFAULT_MAX_LENGTH) 
+meetingTimeId String required maxlength(DEFAULT_MAX_LENGTH) 
+subscribeId String required maxlength(DEFAULT_MAX_LENGTH) 
+promotionId String required maxlength(DEFAULT_MAX_LENGTH) 
+registrationPackageId String required maxlength(DEFAULT_MAX_LENGTH) 
+productId String required maxlength(DEFAULT_MAX_LENGTH) 
+installmentPayment String required maxlength(DEFAULT_MAX_LENGTH) 
+installmentOrderId String required maxlength(DEFAULT_MAX_LENGTH) 
+giftId String required maxlength(DEFAULT_MAX_LENGTH) 
+isAffiliateAmount String required maxlength(DEFAULT_MAX_LENGTH) 
+isAffiliateCommission String required maxlength(DEFAULT_MAX_LENGTH) 
+isRegistrationBonus String required maxlength(DEFAULT_MAX_LENGTH) 
+isCashback String required maxlength(DEFAULT_MAX_LENGTH) 
+system String required maxlength(DEFAULT_MAX_LENGTH) 
+tax String required maxlength(DEFAULT_MAX_LENGTH) 
+amount String required maxlength(DEFAULT_MAX_LENGTH) 
+type String required maxlength(DEFAULT_MAX_LENGTH) 
+typeAccount String required maxlength(DEFAULT_MAX_LENGTH) 
+storeType String required maxlength(DEFAULT_MAX_LENGTH) 
+referredUserId String required maxlength(DEFAULT_MAX_LENGTH) 
+description String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity AdvertisingBanners{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+position String required maxlength(DEFAULT_MAX_LENGTH) 
+size String required maxlength(DEFAULT_MAX_LENGTH) 
+link String required maxlength(DEFAULT_MAX_LENGTH) 
+published String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity AdvertisingBannersTranslations{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+advertisingBanner String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+image String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Affiliates{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+affiliateUser String required maxlength(DEFAULT_MAX_LENGTH) 
+referredUser String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity AffiliatesCodes{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+code String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity AgoraHistory{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+session String required maxlength(DEFAULT_MAX_LENGTH) 
+startAt String required maxlength(DEFAULT_MAX_LENGTH) 
+endAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity BadgeTranslations{
+badge String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+description String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Badges{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+image String required maxlength(DEFAULT_MAX_LENGTH) 
+type String required maxlength(DEFAULT_MAX_LENGTH) 
+condition String required maxlength(DEFAULT_MAX_LENGTH) 
+score String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity BecomeInstructors{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+userId String required maxlength(DEFAULT_MAX_LENGTH) 
+role String required maxlength(DEFAULT_MAX_LENGTH) 
+packageId String required maxlength(DEFAULT_MAX_LENGTH) 
+certificate String required maxlength(DEFAULT_MAX_LENGTH) 
+description String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Blog{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+category String required maxlength(DEFAULT_MAX_LENGTH) 
+authorId String required maxlength(DEFAULT_MAX_LENGTH) 
+slug String required maxlength(DEFAULT_MAX_LENGTH) 
+image String required maxlength(DEFAULT_MAX_LENGTH) 
+visitCount String required maxlength(DEFAULT_MAX_LENGTH) 
+enableComment String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+updatedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity BlogCategories{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+slug String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity BlogTranslations{
+blog String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+description String required maxlength(DEFAULT_MAX_LENGTH) 
+content String required maxlength(DEFAULT_MAX_LENGTH) 
+metaDescription String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity BundleFilterOption{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+bundle String required maxlength(DEFAULT_MAX_LENGTH) 
+filterOption String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity BundleTranslations{
+bundle String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+seoDescription String required maxlength(DEFAULT_MAX_LENGTH) 
+description String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity BundleWebinars{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+creatorId String required maxlength(DEFAULT_MAX_LENGTH) 
+bundle String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+order String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Bundles{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+creator String required maxlength(DEFAULT_MAX_LENGTH) 
+teacher String required maxlength(DEFAULT_MAX_LENGTH) 
+category String required maxlength(DEFAULT_MAX_LENGTH) 
+slug String required maxlength(DEFAULT_MAX_LENGTH) 
+thumbnail String required maxlength(DEFAULT_MAX_LENGTH) 
+imageCover String required maxlength(DEFAULT_MAX_LENGTH) 
+videoDemo String required maxlength(DEFAULT_MAX_LENGTH) 
+videoDemoSource String required maxlength(DEFAULT_MAX_LENGTH) 
+price String required maxlength(DEFAULT_MAX_LENGTH) 
+points String required maxlength(DEFAULT_MAX_LENGTH) 
+subscribe String required maxlength(DEFAULT_MAX_LENGTH) 
+accessDays String required maxlength(DEFAULT_MAX_LENGTH) 
+messageForReviewer String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+updatedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Cart{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+creator String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+bundle String required maxlength(DEFAULT_MAX_LENGTH) 
+productOrder String required maxlength(DEFAULT_MAX_LENGTH) 
+reserveMeeting String required maxlength(DEFAULT_MAX_LENGTH) 
+subscribe String required maxlength(DEFAULT_MAX_LENGTH) 
+promotion String required maxlength(DEFAULT_MAX_LENGTH) 
+gift String required maxlength(DEFAULT_MAX_LENGTH) 
+ticket String required maxlength(DEFAULT_MAX_LENGTH) 
+specialOffer String required maxlength(DEFAULT_MAX_LENGTH) 
+productDiscount String required maxlength(DEFAULT_MAX_LENGTH) 
+installmentPayment String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity CashbackRuleSpecificationItems{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+cashbackRuleId String required maxlength(DEFAULT_MAX_LENGTH) 
+categoryId String required maxlength(DEFAULT_MAX_LENGTH) 
+instructorId String required maxlength(DEFAULT_MAX_LENGTH) 
+sellerId String required maxlength(DEFAULT_MAX_LENGTH) 
+webinarId String required maxlength(DEFAULT_MAX_LENGTH) 
+productId String required maxlength(DEFAULT_MAX_LENGTH) 
+bundleId String required maxlength(DEFAULT_MAX_LENGTH) 
+subscribeId String required maxlength(DEFAULT_MAX_LENGTH) 
+registrationPackageId String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity CashbackRuleTranslations{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+cashbackRuleId String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity CashbackRuleUsersGroups{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+cashbackRuleId String required maxlength(DEFAULT_MAX_LENGTH) 
+groupId String required maxlength(DEFAULT_MAX_LENGTH) 
+userId String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity CashbackRules{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+targetType String required maxlength(DEFAULT_MAX_LENGTH) 
+target String required maxlength(DEFAULT_MAX_LENGTH) 
+startDate String required maxlength(DEFAULT_MAX_LENGTH) 
+endDate String required maxlength(DEFAULT_MAX_LENGTH) 
+amount String required maxlength(DEFAULT_MAX_LENGTH) 
+amountType String required maxlength(DEFAULT_MAX_LENGTH) 
+applyCashbackPerItem String required maxlength(DEFAULT_MAX_LENGTH) 
+maxAmount String required maxlength(DEFAULT_MAX_LENGTH) 
+minAmount String required maxlength(DEFAULT_MAX_LENGTH) 
+enable String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Categories{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+slug String required maxlength(DEFAULT_MAX_LENGTH) 
+parentId String required maxlength(DEFAULT_MAX_LENGTH) 
+icon String required maxlength(DEFAULT_MAX_LENGTH) 
+order String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity CategoryTranslations{
+category String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity CertificateTemplateTranslations{
+certificateTemplate String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+body String required maxlength(DEFAULT_MAX_LENGTH) 
+rtl String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Certificates{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+quiz String required maxlength(DEFAULT_MAX_LENGTH) 
+quizResult String required maxlength(DEFAULT_MAX_LENGTH) 
+student String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+userGrade String required maxlength(DEFAULT_MAX_LENGTH) 
+type String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity CertificatesTemplates{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+image String required maxlength(DEFAULT_MAX_LENGTH) 
+positionX String required maxlength(DEFAULT_MAX_LENGTH) 
+positionY String required maxlength(DEFAULT_MAX_LENGTH) 
+fontSize String required maxlength(DEFAULT_MAX_LENGTH) 
+textColor String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+updatedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Comments{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+review String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+bundle String required maxlength(DEFAULT_MAX_LENGTH) 
+upcomingCourse String required maxlength(DEFAULT_MAX_LENGTH) 
+blogId String required maxlength(DEFAULT_MAX_LENGTH) 
+product String required maxlength(DEFAULT_MAX_LENGTH) 
+productReviewId String required maxlength(DEFAULT_MAX_LENGTH) 
+reply String required maxlength(DEFAULT_MAX_LENGTH) 
+comment String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+report String required maxlength(DEFAULT_MAX_LENGTH) 
+disabled String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+viewedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity CommentsReports{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+userId String required maxlength(DEFAULT_MAX_LENGTH) 
+blogId String required maxlength(DEFAULT_MAX_LENGTH) 
+product String required maxlength(DEFAULT_MAX_LENGTH) 
+webinarId String required maxlength(DEFAULT_MAX_LENGTH) 
+bundleId String required maxlength(DEFAULT_MAX_LENGTH) 
+comment String required maxlength(DEFAULT_MAX_LENGTH) 
+message String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Contacts{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+name String required maxlength(DEFAULT_MAX_LENGTH) 
+email String required maxlength(DEFAULT_MAX_LENGTH) 
+phone String required maxlength(DEFAULT_MAX_LENGTH) 
+subject String required maxlength(DEFAULT_MAX_LENGTH) 
+message String required maxlength(DEFAULT_MAX_LENGTH) 
+reply String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity CourseForumAnswers{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+forum String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+description String required maxlength(DEFAULT_MAX_LENGTH) 
+pin String required maxlength(DEFAULT_MAX_LENGTH) 
+resolved String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity CourseForums{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+description String required maxlength(DEFAULT_MAX_LENGTH) 
+attach String required maxlength(DEFAULT_MAX_LENGTH) 
+pin String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity CourseLearning{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+textLesson String required maxlength(DEFAULT_MAX_LENGTH) 
+file String required maxlength(DEFAULT_MAX_LENGTH) 
+session String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity CourseNoticeboardStatus{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+userId String required maxlength(DEFAULT_MAX_LENGTH) 
+noticeboard String required maxlength(DEFAULT_MAX_LENGTH) 
+seenAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity CourseNoticeboards{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+creator String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+color String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+message String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Currencies{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+currency String required maxlength(DEFAULT_MAX_LENGTH) 
+currencyPosition String required maxlength(DEFAULT_MAX_LENGTH) 
+currencySeparator String required maxlength(DEFAULT_MAX_LENGTH) 
+currencyDecimal String required maxlength(DEFAULT_MAX_LENGTH) 
+exchangeRate String required maxlength(DEFAULT_MAX_LENGTH) 
+order String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity DeleteAccountRequests{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+userId String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity DiscountBundles{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+discountId String required maxlength(DEFAULT_MAX_LENGTH) 
+bundleId String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity DiscountCategories{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+discount String required maxlength(DEFAULT_MAX_LENGTH) 
+category String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity DiscountCourses{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+discount String required maxlength(DEFAULT_MAX_LENGTH) 
+course String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity DiscountGroups{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+discount String required maxlength(DEFAULT_MAX_LENGTH) 
+group String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity DiscountUsers{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+discount String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Discounts{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+creator String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+discountType String required maxlength(DEFAULT_MAX_LENGTH) 
+source String required maxlength(DEFAULT_MAX_LENGTH) 
+code String required maxlength(DEFAULT_MAX_LENGTH) 
+percent String required maxlength(DEFAULT_MAX_LENGTH) 
+amount String required maxlength(DEFAULT_MAX_LENGTH) 
+maxAmount String required maxlength(DEFAULT_MAX_LENGTH) 
+minimumOrder String required maxlength(DEFAULT_MAX_LENGTH) 
+count String required maxlength(DEFAULT_MAX_LENGTH) 
+userType String required maxlength(DEFAULT_MAX_LENGTH) 
+productType String required maxlength(DEFAULT_MAX_LENGTH) 
+forFirstPurchase String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+expiredAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity FaqTranslations{
+faq String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+answer String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Faqs{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+creator String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+bundle String required maxlength(DEFAULT_MAX_LENGTH) 
+upcomingCourse String required maxlength(DEFAULT_MAX_LENGTH) 
+order String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+updatedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Favorites{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+bundle String required maxlength(DEFAULT_MAX_LENGTH) 
+upcomingCourse String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity FeatureWebinarTranslations{
+featureWebinar String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+description String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity FeatureWebinars{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+page String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+updatedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity FileTranslations{
+file String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+description String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Files{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+creator String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+chapter String required maxlength(DEFAULT_MAX_LENGTH) 
+accessibility String required maxlength(DEFAULT_MAX_LENGTH) 
+downloadable String required maxlength(DEFAULT_MAX_LENGTH) 
+storage String required maxlength(DEFAULT_MAX_LENGTH) 
+file String required maxlength(DEFAULT_MAX_LENGTH) 
+volume String required maxlength(DEFAULT_MAX_LENGTH) 
+fileType String required maxlength(DEFAULT_MAX_LENGTH) 
+interactiveType String required maxlength(DEFAULT_MAX_LENGTH) 
+interactiveFileName String required maxlength(DEFAULT_MAX_LENGTH) 
+interactiveFilePath String required maxlength(DEFAULT_MAX_LENGTH) 
+checkPreviousParts String required maxlength(DEFAULT_MAX_LENGTH) 
+accessAfterDay String required maxlength(DEFAULT_MAX_LENGTH) 
+onlineViewer String required maxlength(DEFAULT_MAX_LENGTH) 
+order String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+updatedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+deletedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity FilterOptionTranslations{
+filterOption String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity FilterOptions{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+filter String required maxlength(DEFAULT_MAX_LENGTH) 
+order String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity FilterTranslations{
+filter String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Filters{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+category String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity FloatingBarTranslations{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+floatingBarId String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+description String required maxlength(DEFAULT_MAX_LENGTH) 
+btnText String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity FloatingBars{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+startAt String required maxlength(DEFAULT_MAX_LENGTH) 
+endAt String required maxlength(DEFAULT_MAX_LENGTH) 
+titleColor String required maxlength(DEFAULT_MAX_LENGTH) 
+descriptionColor String required maxlength(DEFAULT_MAX_LENGTH) 
+icon String required maxlength(DEFAULT_MAX_LENGTH) 
+backgroundColor String required maxlength(DEFAULT_MAX_LENGTH) 
+backgroundImage String required maxlength(DEFAULT_MAX_LENGTH) 
+btnUrl String required maxlength(DEFAULT_MAX_LENGTH) 
+btnColor String required maxlength(DEFAULT_MAX_LENGTH) 
+btnTextColor String required maxlength(DEFAULT_MAX_LENGTH) 
+barHeight String required maxlength(DEFAULT_MAX_LENGTH) 
+position String required maxlength(DEFAULT_MAX_LENGTH) 
+fixed String required maxlength(DEFAULT_MAX_LENGTH) 
+enable String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Follows{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+follower String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ForumFeaturedTopics{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+topic String required maxlength(DEFAULT_MAX_LENGTH) 
+icon String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ForumRecommendedTopicItems{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+recommendedTopic String required maxlength(DEFAULT_MAX_LENGTH) 
+topic String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ForumRecommendedTopics{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+icon String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ForumTopicAttachments{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+creator String required maxlength(DEFAULT_MAX_LENGTH) 
+topic String required maxlength(DEFAULT_MAX_LENGTH) 
+path String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ForumTopicBookmarks{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+topic String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ForumTopicLikes{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+topic String required maxlength(DEFAULT_MAX_LENGTH) 
+topicPost String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ForumTopicPosts{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+topic String required maxlength(DEFAULT_MAX_LENGTH) 
+parent String required maxlength(DEFAULT_MAX_LENGTH) 
+description String required maxlength(DEFAULT_MAX_LENGTH) 
+attach String required maxlength(DEFAULT_MAX_LENGTH) 
+pin String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ForumTopicReports{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+topic String required maxlength(DEFAULT_MAX_LENGTH) 
+topicPost String required maxlength(DEFAULT_MAX_LENGTH) 
+message String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ForumTopics{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+creator String required maxlength(DEFAULT_MAX_LENGTH) 
+forum String required maxlength(DEFAULT_MAX_LENGTH) 
+slug String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+description String required maxlength(DEFAULT_MAX_LENGTH) 
+pin String required maxlength(DEFAULT_MAX_LENGTH) 
+close String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ForumTranslations{
+forum String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+description String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Forums{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+slug String required maxlength(DEFAULT_MAX_LENGTH) 
+role String required maxlength(DEFAULT_MAX_LENGTH) 
+group String required maxlength(DEFAULT_MAX_LENGTH) 
+parentId String required maxlength(DEFAULT_MAX_LENGTH) 
+icon String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+close String required maxlength(DEFAULT_MAX_LENGTH) 
+order String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Gifts{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+bundle String required maxlength(DEFAULT_MAX_LENGTH) 
+product String required maxlength(DEFAULT_MAX_LENGTH) 
+name String required maxlength(DEFAULT_MAX_LENGTH) 
+email String required maxlength(DEFAULT_MAX_LENGTH) 
+date String required maxlength(DEFAULT_MAX_LENGTH) 
+description String required maxlength(DEFAULT_MAX_LENGTH) 
+viewed String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity GroupUsers{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+group String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Groups{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+creator String required maxlength(DEFAULT_MAX_LENGTH) 
+name String required maxlength(DEFAULT_MAX_LENGTH) 
+discount String required maxlength(DEFAULT_MAX_LENGTH) 
+commission String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity GroupsRegistrationPackages{
+group String required maxlength(DEFAULT_MAX_LENGTH) 
+instructorsCount String required maxlength(DEFAULT_MAX_LENGTH) 
+studentsCount String required maxlength(DEFAULT_MAX_LENGTH) 
+coursesCapacity String required maxlength(DEFAULT_MAX_LENGTH) 
+coursesCount String required maxlength(DEFAULT_MAX_LENGTH) 
+meetingCount String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity HomePageStatisticTranslations{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+homePageStatisticId String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+description String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity HomePageStatistics{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+icon String required maxlength(DEFAULT_MAX_LENGTH) 
+color String required maxlength(DEFAULT_MAX_LENGTH) 
+count String required maxlength(DEFAULT_MAX_LENGTH) 
+order String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity HomeSections{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+name String required maxlength(DEFAULT_MAX_LENGTH) 
+order String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity InstallmentOrderAttachments{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+installmentOrder String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+file String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity InstallmentOrderPayments{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+installmentOrder String required maxlength(DEFAULT_MAX_LENGTH) 
+sale String required maxlength(DEFAULT_MAX_LENGTH) 
+type String required maxlength(DEFAULT_MAX_LENGTH) 
+step String required maxlength(DEFAULT_MAX_LENGTH) 
+amount String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity InstallmentOrders{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+installment String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+product String required maxlength(DEFAULT_MAX_LENGTH) 
+bundle String required maxlength(DEFAULT_MAX_LENGTH) 
+subscribe String required maxlength(DEFAULT_MAX_LENGTH) 
+registrationPackage String required maxlength(DEFAULT_MAX_LENGTH) 
+productOrder String required maxlength(DEFAULT_MAX_LENGTH) 
+itemPrice String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+refundAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity InstallmentReminders{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+userId String required maxlength(DEFAULT_MAX_LENGTH) 
+installmentOrderId String required maxlength(DEFAULT_MAX_LENGTH) 
+installmentStepId String required maxlength(DEFAULT_MAX_LENGTH) 
+type String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity InstallmentSpecificationItems{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+installment String required maxlength(DEFAULT_MAX_LENGTH) 
+category String required maxlength(DEFAULT_MAX_LENGTH) 
+instructor String required maxlength(DEFAULT_MAX_LENGTH) 
+seller String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+product String required maxlength(DEFAULT_MAX_LENGTH) 
+bundle String required maxlength(DEFAULT_MAX_LENGTH) 
+subscribe String required maxlength(DEFAULT_MAX_LENGTH) 
+registrationPackage String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity InstallmentStepTranslations{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+installmentStep String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity InstallmentSteps{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+installment String required maxlength(DEFAULT_MAX_LENGTH) 
+deadline String required maxlength(DEFAULT_MAX_LENGTH) 
+amount String required maxlength(DEFAULT_MAX_LENGTH) 
+amountType String required maxlength(DEFAULT_MAX_LENGTH) 
+order String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity InstallmentTranslations{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+installment String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+mainTitle String required maxlength(DEFAULT_MAX_LENGTH) 
+description String required maxlength(DEFAULT_MAX_LENGTH) 
+banner String required maxlength(DEFAULT_MAX_LENGTH) 
+options String required maxlength(DEFAULT_MAX_LENGTH) 
+verificationDescription String required maxlength(DEFAULT_MAX_LENGTH) 
+verificationBanner String required maxlength(DEFAULT_MAX_LENGTH) 
+verificationVideo String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity InstallmentUserGroups{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+installment String required maxlength(DEFAULT_MAX_LENGTH) 
+group String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Installments{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+targetType String required maxlength(DEFAULT_MAX_LENGTH) 
+target String required maxlength(DEFAULT_MAX_LENGTH) 
+capacity String required maxlength(DEFAULT_MAX_LENGTH) 
+startDate String required maxlength(DEFAULT_MAX_LENGTH) 
+endDate String required maxlength(DEFAULT_MAX_LENGTH) 
+verification String required maxlength(DEFAULT_MAX_LENGTH) 
+requestUploads String required maxlength(DEFAULT_MAX_LENGTH) 
+bypassVerificationForVerifiedUsers String required maxlength(DEFAULT_MAX_LENGTH) 
+upfront String required maxlength(DEFAULT_MAX_LENGTH) 
+upfrontType String required maxlength(DEFAULT_MAX_LENGTH) 
+enable String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity JazzcashTransactions{
+txnRefNo String required maxlength(DEFAULT_MAX_LENGTH) 
+order String required maxlength(DEFAULT_MAX_LENGTH) 
+request String required maxlength(DEFAULT_MAX_LENGTH) 
+response String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+updatedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity MeetingTimes{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+meeting String required maxlength(DEFAULT_MAX_LENGTH) 
+meetingType String required maxlength(DEFAULT_MAX_LENGTH) 
+dayLabel String required maxlength(DEFAULT_MAX_LENGTH) 
+time String required maxlength(DEFAULT_MAX_LENGTH) 
+description String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Meetings{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+creator String required maxlength(DEFAULT_MAX_LENGTH) 
+amount String required maxlength(DEFAULT_MAX_LENGTH) 
+teacher String required maxlength(DEFAULT_MAX_LENGTH) 
+discount String required maxlength(DEFAULT_MAX_LENGTH) 
+inPerson String required maxlength(DEFAULT_MAX_LENGTH) 
+inPersonAmount String required maxlength(DEFAULT_MAX_LENGTH) 
+groupMeeting String required maxlength(DEFAULT_MAX_LENGTH) 
+onlineGroupMinStudent String required maxlength(DEFAULT_MAX_LENGTH) 
+onlineGroupMaxStudent String required maxlength(DEFAULT_MAX_LENGTH) 
+onlineGroupAmount String required maxlength(DEFAULT_MAX_LENGTH) 
+inPersonGroupMinStudent String required maxlength(DEFAULT_MAX_LENGTH) 
+inPersonGroupMaxStudent String required maxlength(DEFAULT_MAX_LENGTH) 
+inPersonGroupAmount String required maxlength(DEFAULT_MAX_LENGTH) 
+disabled String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Migrations{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+migration String required maxlength(DEFAULT_MAX_LENGTH) 
+batch String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity NavbarButtonTranslations{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+navbarButton String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+url String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity NavbarButtons{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+role String required maxlength(DEFAULT_MAX_LENGTH) 
+forGuest String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Newsletters{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+userId String required maxlength(DEFAULT_MAX_LENGTH) 
+email String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity NewslettersHistory{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+description String required maxlength(DEFAULT_MAX_LENGTH) 
+sendMethod String required maxlength(DEFAULT_MAX_LENGTH) 
+bccEmail String required maxlength(DEFAULT_MAX_LENGTH) 
+emailCount String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Noticeboards{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+organ String required maxlength(DEFAULT_MAX_LENGTH) 
+instructor String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+type String required maxlength(DEFAULT_MAX_LENGTH) 
+sender String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+message String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity NoticeboardsStatus{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+userId String required maxlength(DEFAULT_MAX_LENGTH) 
+noticeboard String required maxlength(DEFAULT_MAX_LENGTH) 
+seenAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity NotificationTemplates{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+template String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Notifications{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+senderId String required maxlength(DEFAULT_MAX_LENGTH) 
+group String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+message String required maxlength(DEFAULT_MAX_LENGTH) 
+sender String required maxlength(DEFAULT_MAX_LENGTH) 
+type String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity NotificationsStatus{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+userId String required maxlength(DEFAULT_MAX_LENGTH) 
+notification String required maxlength(DEFAULT_MAX_LENGTH) 
+seenAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity OfflineBankSpecificationTranslations{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+offlineBankSpecification String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+name String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity OfflineBankSpecifications{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+offlineBank String required maxlength(DEFAULT_MAX_LENGTH) 
+value String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity OfflineBankTranslations{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+offlineBank String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity OfflineBanks{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+logo String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity OfflinePayments{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+amount String required maxlength(DEFAULT_MAX_LENGTH) 
+offlineBank String required maxlength(DEFAULT_MAX_LENGTH) 
+referenceNumber String required maxlength(DEFAULT_MAX_LENGTH) 
+attachment String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+payDate String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity OrderItems{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+order String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+bundleId String required maxlength(DEFAULT_MAX_LENGTH) 
+subscribe String required maxlength(DEFAULT_MAX_LENGTH) 
+promotion String required maxlength(DEFAULT_MAX_LENGTH) 
+gift String required maxlength(DEFAULT_MAX_LENGTH) 
+registrationPackageId String required maxlength(DEFAULT_MAX_LENGTH) 
+productOrderId String required maxlength(DEFAULT_MAX_LENGTH) 
+installmentPaymentId String required maxlength(DEFAULT_MAX_LENGTH) 
+reserveMeeting String required maxlength(DEFAULT_MAX_LENGTH) 
+ticket String required maxlength(DEFAULT_MAX_LENGTH) 
+discountId String required maxlength(DEFAULT_MAX_LENGTH) 
+becomeInstructorId String required maxlength(DEFAULT_MAX_LENGTH) 
+amount String required maxlength(DEFAULT_MAX_LENGTH) 
+tax String required maxlength(DEFAULT_MAX_LENGTH) 
+taxPrice String required maxlength(DEFAULT_MAX_LENGTH) 
+commission String required maxlength(DEFAULT_MAX_LENGTH) 
+commissionPrice String required maxlength(DEFAULT_MAX_LENGTH) 
+discount String required maxlength(DEFAULT_MAX_LENGTH) 
+totalAmount String required maxlength(DEFAULT_MAX_LENGTH) 
+productDeliveryFee String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Orders{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+paymentMethod String required maxlength(DEFAULT_MAX_LENGTH) 
+isChargeAccount String required maxlength(DEFAULT_MAX_LENGTH) 
+amount String required maxlength(DEFAULT_MAX_LENGTH) 
+tax String required maxlength(DEFAULT_MAX_LENGTH) 
+totalDiscount String required maxlength(DEFAULT_MAX_LENGTH) 
+totalAmount String required maxlength(DEFAULT_MAX_LENGTH) 
+productDeliveryFee String required maxlength(DEFAULT_MAX_LENGTH) 
+referenceId String required maxlength(DEFAULT_MAX_LENGTH) 
+paymentData String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity PageTranslations{
+page String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+seoDescription String required maxlength(DEFAULT_MAX_LENGTH) 
+content String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Pages{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+link String required maxlength(DEFAULT_MAX_LENGTH) 
+name String required maxlength(DEFAULT_MAX_LENGTH) 
+robot String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity PasswordResets{
+email String required maxlength(DEFAULT_MAX_LENGTH) 
+token String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity PaykuPayments{
+transactionId String required maxlength(DEFAULT_MAX_LENGTH) 
+start String required maxlength(DEFAULT_MAX_LENGTH) 
+end String required maxlength(DEFAULT_MAX_LENGTH) 
+media String required maxlength(DEFAULT_MAX_LENGTH) 
+verificationKey String required maxlength(DEFAULT_MAX_LENGTH) 
+authorizationCode String required maxlength(DEFAULT_MAX_LENGTH) 
+last4Digits String required maxlength(DEFAULT_MAX_LENGTH) 
+installments String required maxlength(DEFAULT_MAX_LENGTH) 
+cardType String required maxlength(DEFAULT_MAX_LENGTH) 
+additionalParameters String required maxlength(DEFAULT_MAX_LENGTH) 
+currency String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+updatedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+paymentKey String required maxlength(DEFAULT_MAX_LENGTH) 
+transactionKey String required maxlength(DEFAULT_MAX_LENGTH) 
+depositDate String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity PaykuTransactions{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+order String required maxlength(DEFAULT_MAX_LENGTH) 
+email String required maxlength(DEFAULT_MAX_LENGTH) 
+subject String required maxlength(DEFAULT_MAX_LENGTH) 
+url String required maxlength(DEFAULT_MAX_LENGTH) 
+amount String required maxlength(DEFAULT_MAX_LENGTH) 
+notifiedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+updatedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+fullName String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity PaymentChannels{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+className String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+image String required maxlength(DEFAULT_MAX_LENGTH) 
+settings String required maxlength(DEFAULT_MAX_LENGTH) 
+currencies String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Payouts{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+userSelectedBank String required maxlength(DEFAULT_MAX_LENGTH) 
+amount String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity PayuTransactions{
+paidForId String required maxlength(DEFAULT_MAX_LENGTH) 
+paidForType String required maxlength(DEFAULT_MAX_LENGTH) 
+transactionId String required maxlength(DEFAULT_MAX_LENGTH) 
+gateway String required maxlength(DEFAULT_MAX_LENGTH) 
+body String required maxlength(DEFAULT_MAX_LENGTH) 
+destination String required maxlength(DEFAULT_MAX_LENGTH) 
+hash String required maxlength(DEFAULT_MAX_LENGTH) 
+response String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+verifiedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+deletedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+updatedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Permissions{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+role String required maxlength(DEFAULT_MAX_LENGTH) 
+section String required maxlength(DEFAULT_MAX_LENGTH) 
+allow String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Prerequisites{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+prerequisite String required maxlength(DEFAULT_MAX_LENGTH) 
+isrequired String required maxlength(DEFAULT_MAX_LENGTH) 
+order String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+updatedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ProductCategories{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+parentId String required maxlength(DEFAULT_MAX_LENGTH) 
+icon String required maxlength(DEFAULT_MAX_LENGTH) 
+order String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ProductCategoryTranslations{
+productCategory String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ProductDiscounts{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+creator String required maxlength(DEFAULT_MAX_LENGTH) 
+product String required maxlength(DEFAULT_MAX_LENGTH) 
+name String required maxlength(DEFAULT_MAX_LENGTH) 
+percent String required maxlength(DEFAULT_MAX_LENGTH) 
+count String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+startDate String required maxlength(DEFAULT_MAX_LENGTH) 
+endDate String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ProductFaqTranslations{
+productFaq String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+answer String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ProductFaqs{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+creator String required maxlength(DEFAULT_MAX_LENGTH) 
+product String required maxlength(DEFAULT_MAX_LENGTH) 
+order String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ProductFileTranslations{
+productFile String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+description String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ProductFiles{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+creator String required maxlength(DEFAULT_MAX_LENGTH) 
+product String required maxlength(DEFAULT_MAX_LENGTH) 
+path String required maxlength(DEFAULT_MAX_LENGTH) 
+fileType String required maxlength(DEFAULT_MAX_LENGTH) 
+volume String required maxlength(DEFAULT_MAX_LENGTH) 
+onlineViewer String required maxlength(DEFAULT_MAX_LENGTH) 
+order String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ProductFilterOptionTranslations{
+productFilterOption String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ProductFilterOptions{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+filter String required maxlength(DEFAULT_MAX_LENGTH) 
+order String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ProductFilterTranslations{
+productFilter String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ProductFilters{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+category String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ProductMedia{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+creator String required maxlength(DEFAULT_MAX_LENGTH) 
+product String required maxlength(DEFAULT_MAX_LENGTH) 
+type String required maxlength(DEFAULT_MAX_LENGTH) 
+path String required maxlength(DEFAULT_MAX_LENGTH) 
+order String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ProductOrders{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+productId String required maxlength(DEFAULT_MAX_LENGTH) 
+sellerId String required maxlength(DEFAULT_MAX_LENGTH) 
+buyerId String required maxlength(DEFAULT_MAX_LENGTH) 
+saleId String required maxlength(DEFAULT_MAX_LENGTH) 
+installmentOrder String required maxlength(DEFAULT_MAX_LENGTH) 
+gift String required maxlength(DEFAULT_MAX_LENGTH) 
+specifications String required maxlength(DEFAULT_MAX_LENGTH) 
+quantity String required maxlength(DEFAULT_MAX_LENGTH) 
+discountId String required maxlength(DEFAULT_MAX_LENGTH) 
+messageToSeller String required maxlength(DEFAULT_MAX_LENGTH) 
+trackingCode String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ProductReviews{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+product String required maxlength(DEFAULT_MAX_LENGTH) 
+creator String required maxlength(DEFAULT_MAX_LENGTH) 
+productQuality String required maxlength(DEFAULT_MAX_LENGTH) 
+purchaseWorth String required maxlength(DEFAULT_MAX_LENGTH) 
+deliveryQuality String required maxlength(DEFAULT_MAX_LENGTH) 
+sellerQuality String required maxlength(DEFAULT_MAX_LENGTH) 
+rates String required maxlength(DEFAULT_MAX_LENGTH) 
+description String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ProductSelectedFilterOptions{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+product String required maxlength(DEFAULT_MAX_LENGTH) 
+filterOption String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ProductSelectedSpecificationMultiValues{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+selectedSpecification String required maxlength(DEFAULT_MAX_LENGTH) 
+specificationMultiValue String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ProductSelectedSpecificationTranslations{
+productSelectedSpecification String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+value String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ProductSelectedSpecifications{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+creator String required maxlength(DEFAULT_MAX_LENGTH) 
+product String required maxlength(DEFAULT_MAX_LENGTH) 
+productSpecification String required maxlength(DEFAULT_MAX_LENGTH) 
+type String required maxlength(DEFAULT_MAX_LENGTH) 
+allowSelection String required maxlength(DEFAULT_MAX_LENGTH) 
+order String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ProductSpecificationCategories{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+specification String required maxlength(DEFAULT_MAX_LENGTH) 
+category String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ProductSpecificationMultiValueTranslations{
+productSpecificationMultiValue String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ProductSpecificationMultiValues{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+specification String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ProductSpecificationTranslations{
+productSpecification String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ProductSpecifications{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+inputType String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ProductTranslations{
+product String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+seoDescription String required maxlength(DEFAULT_MAX_LENGTH) 
+summary String required maxlength(DEFAULT_MAX_LENGTH) 
+description String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Products{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+creator String required maxlength(DEFAULT_MAX_LENGTH) 
+type String required maxlength(DEFAULT_MAX_LENGTH) 
+slug String required maxlength(DEFAULT_MAX_LENGTH) 
+category String required maxlength(DEFAULT_MAX_LENGTH) 
+price String required maxlength(DEFAULT_MAX_LENGTH) 
+point String required maxlength(DEFAULT_MAX_LENGTH) 
+unlimitedInventory String required maxlength(DEFAULT_MAX_LENGTH) 
+ordering String required maxlength(DEFAULT_MAX_LENGTH) 
+inventory String required maxlength(DEFAULT_MAX_LENGTH) 
+inventoryWarning String required maxlength(DEFAULT_MAX_LENGTH) 
+inventoryUpdatedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+deliveryFee String required maxlength(DEFAULT_MAX_LENGTH) 
+deliveryEstimatedTime String required maxlength(DEFAULT_MAX_LENGTH) 
+messageForReviewer String required maxlength(DEFAULT_MAX_LENGTH) 
+tax String required maxlength(DEFAULT_MAX_LENGTH) 
+commission String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+updatedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity PromotionTranslations{
+promotion String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+description String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Promotions{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+days String required maxlength(DEFAULT_MAX_LENGTH) 
+price String required maxlength(DEFAULT_MAX_LENGTH) 
+icon String required maxlength(DEFAULT_MAX_LENGTH) 
+isPopular String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Purchases{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity QuizQuestionTranslations{
+quizzesQuestion String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+correct String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity QuizTranslations{
+quiz String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Quizzes{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+creator String required maxlength(DEFAULT_MAX_LENGTH) 
+chapter String required maxlength(DEFAULT_MAX_LENGTH) 
+time String required maxlength(DEFAULT_MAX_LENGTH) 
+attempt String required maxlength(DEFAULT_MAX_LENGTH) 
+passMark String required maxlength(DEFAULT_MAX_LENGTH) 
+certificate String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+totalMark String required maxlength(DEFAULT_MAX_LENGTH) 
+displayLimitedQuestions String required maxlength(DEFAULT_MAX_LENGTH) 
+displayNumberOfQuestions String required maxlength(DEFAULT_MAX_LENGTH) 
+displayQuestionsRandomly String required maxlength(DEFAULT_MAX_LENGTH) 
+expiryDays String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+updatedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity QuizzesQuestions{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+quiz String required maxlength(DEFAULT_MAX_LENGTH) 
+creator String required maxlength(DEFAULT_MAX_LENGTH) 
+grade String required maxlength(DEFAULT_MAX_LENGTH) 
+type String required maxlength(DEFAULT_MAX_LENGTH) 
+image String required maxlength(DEFAULT_MAX_LENGTH) 
+video String required maxlength(DEFAULT_MAX_LENGTH) 
+order String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+updatedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity QuizzesQuestionsAnswerTranslations{
+quizzesQuestionsAnswer String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity QuizzesQuestionsAnswers{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+creator String required maxlength(DEFAULT_MAX_LENGTH) 
+question String required maxlength(DEFAULT_MAX_LENGTH) 
+image String required maxlength(DEFAULT_MAX_LENGTH) 
+correct String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+updatedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity QuizzesResults{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+quiz String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+results String required maxlength(DEFAULT_MAX_LENGTH) 
+userGrade String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Regions{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+country String required maxlength(DEFAULT_MAX_LENGTH) 
+province String required maxlength(DEFAULT_MAX_LENGTH) 
+city String required maxlength(DEFAULT_MAX_LENGTH) 
+geoCenter String required maxlength(DEFAULT_MAX_LENGTH) 
+type String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity RegistrationPackages{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+days String required maxlength(DEFAULT_MAX_LENGTH) 
+price String required maxlength(DEFAULT_MAX_LENGTH) 
+icon String required maxlength(DEFAULT_MAX_LENGTH) 
+role String required maxlength(DEFAULT_MAX_LENGTH) 
+instructorsCount String required maxlength(DEFAULT_MAX_LENGTH) 
+studentsCount String required maxlength(DEFAULT_MAX_LENGTH) 
+coursesCapacity String required maxlength(DEFAULT_MAX_LENGTH) 
+coursesCount String required maxlength(DEFAULT_MAX_LENGTH) 
+meetingCount String required maxlength(DEFAULT_MAX_LENGTH) 
+productCount String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity RegistrationPackagesTranslations{
+registrationPackage String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+description String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity ReserveMeetings{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+meetingTime String required maxlength(DEFAULT_MAX_LENGTH) 
+day String required maxlength(DEFAULT_MAX_LENGTH) 
+date String required maxlength(DEFAULT_MAX_LENGTH) 
+startAt String required maxlength(DEFAULT_MAX_LENGTH) 
+endAt String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+paidAmount String required maxlength(DEFAULT_MAX_LENGTH) 
+meetingType String required maxlength(DEFAULT_MAX_LENGTH) 
+studentCount String required maxlength(DEFAULT_MAX_LENGTH) 
+discount String required maxlength(DEFAULT_MAX_LENGTH) 
+link String required maxlength(DEFAULT_MAX_LENGTH) 
+password String required maxlength(DEFAULT_MAX_LENGTH) 
+description String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+lockedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+reservedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+sale String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Rewards{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+type String required maxlength(DEFAULT_MAX_LENGTH) 
+score String required maxlength(DEFAULT_MAX_LENGTH) 
+condition String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity RewardsAccounting{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+userId String required maxlength(DEFAULT_MAX_LENGTH) 
+itemId String required maxlength(DEFAULT_MAX_LENGTH) 
+type String required maxlength(DEFAULT_MAX_LENGTH) 
+score String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Roles{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+name String required maxlength(DEFAULT_MAX_LENGTH) 
+caption String required maxlength(DEFAULT_MAX_LENGTH) 
+usersCount String required maxlength(DEFAULT_MAX_LENGTH) 
+isAdmin String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Sales{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+seller String required maxlength(DEFAULT_MAX_LENGTH) 
+buyer String required maxlength(DEFAULT_MAX_LENGTH) 
+order String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+bundleId String required maxlength(DEFAULT_MAX_LENGTH) 
+meeting String required maxlength(DEFAULT_MAX_LENGTH) 
+subscribeId String required maxlength(DEFAULT_MAX_LENGTH) 
+meetingTimeId String required maxlength(DEFAULT_MAX_LENGTH) 
+ticket String required maxlength(DEFAULT_MAX_LENGTH) 
+promotion String required maxlength(DEFAULT_MAX_LENGTH) 
+productOrderId String required maxlength(DEFAULT_MAX_LENGTH) 
+registrationPackageId String required maxlength(DEFAULT_MAX_LENGTH) 
+installmentPayment String required maxlength(DEFAULT_MAX_LENGTH) 
+giftId String required maxlength(DEFAULT_MAX_LENGTH) 
+paymentMethod String required maxlength(DEFAULT_MAX_LENGTH) 
+type String required maxlength(DEFAULT_MAX_LENGTH) 
+amount String required maxlength(DEFAULT_MAX_LENGTH) 
+tax String required maxlength(DEFAULT_MAX_LENGTH) 
+commission String required maxlength(DEFAULT_MAX_LENGTH) 
+discount String required maxlength(DEFAULT_MAX_LENGTH) 
+totalAmount String required maxlength(DEFAULT_MAX_LENGTH) 
+productDeliveryFee String required maxlength(DEFAULT_MAX_LENGTH) 
+manualAdded String required maxlength(DEFAULT_MAX_LENGTH) 
+accessToPurchasedItem String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+refundAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity SalesLog{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+sale String required maxlength(DEFAULT_MAX_LENGTH) 
+viewedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Sections{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+name String required maxlength(DEFAULT_MAX_LENGTH) 
+sectionGroupId String required maxlength(DEFAULT_MAX_LENGTH) 
+caption String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity SessionReminds{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+session String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity SessionTranslations{
+session String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+description String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity SettingTranslations{
+setting String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+value String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity SpecialOffers{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+creator String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+bundle String required maxlength(DEFAULT_MAX_LENGTH) 
+subscribe String required maxlength(DEFAULT_MAX_LENGTH) 
+registrationPackage String required maxlength(DEFAULT_MAX_LENGTH) 
+name String required maxlength(DEFAULT_MAX_LENGTH) 
+percent String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+fromDate String required maxlength(DEFAULT_MAX_LENGTH) 
+toDate String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity SubscribeReminds{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+subscribe String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity SubscribeTranslations{
+subscribe String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+description String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity SubscribeUses{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+subscribe String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+bundle String required maxlength(DEFAULT_MAX_LENGTH) 
+sale String required maxlength(DEFAULT_MAX_LENGTH) 
+installmentOrder String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Subscribes{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+usableCount String required maxlength(DEFAULT_MAX_LENGTH) 
+days String required maxlength(DEFAULT_MAX_LENGTH) 
+price String required maxlength(DEFAULT_MAX_LENGTH) 
+icon String required maxlength(DEFAULT_MAX_LENGTH) 
+isPopular String required maxlength(DEFAULT_MAX_LENGTH) 
+infiniteUse String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity SupportConversations{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+support String required maxlength(DEFAULT_MAX_LENGTH) 
+supporter String required maxlength(DEFAULT_MAX_LENGTH) 
+sender String required maxlength(DEFAULT_MAX_LENGTH) 
+attach String required maxlength(DEFAULT_MAX_LENGTH) 
+message String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity SupportDepartmentTranslations{
+supportDepartment String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity SupportDepartments{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Supports{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+department String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+updatedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Tags{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+bundle String required maxlength(DEFAULT_MAX_LENGTH) 
+upcomingCourse String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity TestimonialTranslations{
+testimonial String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+userName String required maxlength(DEFAULT_MAX_LENGTH) 
+userBio String required maxlength(DEFAULT_MAX_LENGTH) 
+comment String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Testimonials{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+userAvatar String required maxlength(DEFAULT_MAX_LENGTH) 
+rate String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity TextLessonTranslations{
+textLesson String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+summary String required maxlength(DEFAULT_MAX_LENGTH) 
+content String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity TextLessons{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+creator String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+chapter String required maxlength(DEFAULT_MAX_LENGTH) 
+image String required maxlength(DEFAULT_MAX_LENGTH) 
+studyTime String required maxlength(DEFAULT_MAX_LENGTH) 
+accessibility String required maxlength(DEFAULT_MAX_LENGTH) 
+checkPreviousParts String required maxlength(DEFAULT_MAX_LENGTH) 
+accessAfterDay String required maxlength(DEFAULT_MAX_LENGTH) 
+order String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+updatedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity TextLessonsAttachments{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+textLesson String required maxlength(DEFAULT_MAX_LENGTH) 
+file String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity TicketTranslations{
+ticket String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity TicketUsers{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+ticket String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Tickets{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+creator String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+bundle String required maxlength(DEFAULT_MAX_LENGTH) 
+startDate String required maxlength(DEFAULT_MAX_LENGTH) 
+endDate String required maxlength(DEFAULT_MAX_LENGTH) 
+discount String required maxlength(DEFAULT_MAX_LENGTH) 
+capacity String required maxlength(DEFAULT_MAX_LENGTH) 
+order String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+updatedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+deletedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity TrendCategories{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+category String required maxlength(DEFAULT_MAX_LENGTH) 
+icon String required maxlength(DEFAULT_MAX_LENGTH) 
+color String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity UpcomingCourseFilterOption{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+upcomingCourse String required maxlength(DEFAULT_MAX_LENGTH) 
+filterOption String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity UpcomingCourseFollowers{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+upcomingCourse String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity UpcomingCourseReports{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+upcomingCourse String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+reason String required maxlength(DEFAULT_MAX_LENGTH) 
+message String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity UpcomingCourseTranslations{
+upcomingCourse String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+seoDescription String required maxlength(DEFAULT_MAX_LENGTH) 
+description String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity UpcomingCourses{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+creator String required maxlength(DEFAULT_MAX_LENGTH) 
+teacher String required maxlength(DEFAULT_MAX_LENGTH) 
+category String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+type String required maxlength(DEFAULT_MAX_LENGTH) 
+slug String required maxlength(DEFAULT_MAX_LENGTH) 
+thumbnail String required maxlength(DEFAULT_MAX_LENGTH) 
+imageCover String required maxlength(DEFAULT_MAX_LENGTH) 
+videoDemo String required maxlength(DEFAULT_MAX_LENGTH) 
+videoDemoSource String required maxlength(DEFAULT_MAX_LENGTH) 
+publishDate String required maxlength(DEFAULT_MAX_LENGTH) 
+timezone String required maxlength(DEFAULT_MAX_LENGTH) 
+points String required maxlength(DEFAULT_MAX_LENGTH) 
+capacity String required maxlength(DEFAULT_MAX_LENGTH) 
+price String required maxlength(DEFAULT_MAX_LENGTH) 
+duration String required maxlength(DEFAULT_MAX_LENGTH) 
+sections String required maxlength(DEFAULT_MAX_LENGTH) 
+parts String required maxlength(DEFAULT_MAX_LENGTH) 
+courseProgress String required maxlength(DEFAULT_MAX_LENGTH) 
+support String required maxlength(DEFAULT_MAX_LENGTH) 
+certificate String required maxlength(DEFAULT_MAX_LENGTH) 
+includeQuizzes String required maxlength(DEFAULT_MAX_LENGTH) 
+downloadable String required maxlength(DEFAULT_MAX_LENGTH) 
+forum String required maxlength(DEFAULT_MAX_LENGTH) 
+messageForReviewer String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity UserBankSpecificationTranslations{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+userBankSpecification String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+name String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity UserBankSpecifications{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+userBank String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity UserBankTranslations{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+userBank String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity UserBanks{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+logo String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity UserSelectedBankSpecifications{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+userSelectedBank String required maxlength(DEFAULT_MAX_LENGTH) 
+userBankSpecification String required maxlength(DEFAULT_MAX_LENGTH) 
+value String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity UserSelectedBanks{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+userBank String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Users{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+fullName String required maxlength(DEFAULT_MAX_LENGTH) 
+roleName String required maxlength(DEFAULT_MAX_LENGTH) 
+roleId String required maxlength(DEFAULT_MAX_LENGTH) 
+mobile String required maxlength(DEFAULT_MAX_LENGTH) 
+email String required maxlength(DEFAULT_MAX_LENGTH) 
+bio String required maxlength(DEFAULT_MAX_LENGTH) 
+password String required maxlength(DEFAULT_MAX_LENGTH) 
+organId String required maxlength(DEFAULT_MAX_LENGTH) 
+location String required maxlength(DEFAULT_MAX_LENGTH) 
+groupMeeting String required maxlength(DEFAULT_MAX_LENGTH) 
+levelOfTraining String required maxlength(DEFAULT_MAX_LENGTH) 
+meetingType String required maxlength(DEFAULT_MAX_LENGTH) 
+googleId String required maxlength(DEFAULT_MAX_LENGTH) 
+facebookId String required maxlength(DEFAULT_MAX_LENGTH) 
+rememberToken String required maxlength(DEFAULT_MAX_LENGTH) 
+loggedCount String required maxlength(DEFAULT_MAX_LENGTH) 
+verified String required maxlength(DEFAULT_MAX_LENGTH) 
+financialApproval String required maxlength(DEFAULT_MAX_LENGTH) 
+installmentApproval String required maxlength(DEFAULT_MAX_LENGTH) 
+enableInstallments String required maxlength(DEFAULT_MAX_LENGTH) 
+disableCashback String required maxlength(DEFAULT_MAX_LENGTH) 
+enableRegistrationBonus String required maxlength(DEFAULT_MAX_LENGTH) 
+registrationBonusAmount String required maxlength(DEFAULT_MAX_LENGTH) 
+avatar String required maxlength(DEFAULT_MAX_LENGTH) 
+avatarSettings String required maxlength(DEFAULT_MAX_LENGTH) 
+coverImg String required maxlength(DEFAULT_MAX_LENGTH) 
+headline String required maxlength(DEFAULT_MAX_LENGTH) 
+about String required maxlength(DEFAULT_MAX_LENGTH) 
+address String required maxlength(DEFAULT_MAX_LENGTH) 
+country String required maxlength(DEFAULT_MAX_LENGTH) 
+province String required maxlength(DEFAULT_MAX_LENGTH) 
+city String required maxlength(DEFAULT_MAX_LENGTH) 
+district String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+accessContent String required maxlength(DEFAULT_MAX_LENGTH) 
+language String required maxlength(DEFAULT_MAX_LENGTH) 
+currency String required maxlength(DEFAULT_MAX_LENGTH) 
+timezone String required maxlength(DEFAULT_MAX_LENGTH) 
+newsletter String required maxlength(DEFAULT_MAX_LENGTH) 
+publicMessage String required maxlength(DEFAULT_MAX_LENGTH) 
+identityScan String required maxlength(DEFAULT_MAX_LENGTH) 
+certificate String required maxlength(DEFAULT_MAX_LENGTH) 
+commission String required maxlength(DEFAULT_MAX_LENGTH) 
+affiliate String required maxlength(DEFAULT_MAX_LENGTH) 
+canCreateStore String required maxlength(DEFAULT_MAX_LENGTH) 
+ban String required maxlength(DEFAULT_MAX_LENGTH) 
+banStartAt String required maxlength(DEFAULT_MAX_LENGTH) 
+banEndAt String required maxlength(DEFAULT_MAX_LENGTH) 
+offline String required maxlength(DEFAULT_MAX_LENGTH) 
+offlineMessage String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+updatedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+deletedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity UsersBadges{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+badge String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity UsersCookieSecurity{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+type String required maxlength(DEFAULT_MAX_LENGTH) 
+settings String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity UsersMetas{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+name String required maxlength(DEFAULT_MAX_LENGTH) 
+value String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity UsersOccupations{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+category String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity UsersRegistrationPackages{
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+instructorsCount String required maxlength(DEFAULT_MAX_LENGTH) 
+studentsCount String required maxlength(DEFAULT_MAX_LENGTH) 
+coursesCapacity String required maxlength(DEFAULT_MAX_LENGTH) 
+coursesCount String required maxlength(DEFAULT_MAX_LENGTH) 
+meetingCount String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity UsersZoomApi{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+jwtToken String required maxlength(DEFAULT_MAX_LENGTH) 
+apiKey String required maxlength(DEFAULT_MAX_LENGTH) 
+apiSecret String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Verifications{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+mobile String required maxlength(DEFAULT_MAX_LENGTH) 
+email String required maxlength(DEFAULT_MAX_LENGTH) 
+code String required maxlength(DEFAULT_MAX_LENGTH) 
+verifiedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+expiredAt String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Waitlists{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+webinarId String required maxlength(DEFAULT_MAX_LENGTH) 
+userId String required maxlength(DEFAULT_MAX_LENGTH) 
+fullName String required maxlength(DEFAULT_MAX_LENGTH) 
+email String required maxlength(DEFAULT_MAX_LENGTH) 
+phone String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity WebinarAssignmentAttachments{
+creatorId String required maxlength(DEFAULT_MAX_LENGTH) 
+assignment String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+attach String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity WebinarAssignmentHistory{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+instructor String required maxlength(DEFAULT_MAX_LENGTH) 
+student String required maxlength(DEFAULT_MAX_LENGTH) 
+assignment String required maxlength(DEFAULT_MAX_LENGTH) 
+grade String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity WebinarAssignmentHistoryMessages{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+assignmentHistory String required maxlength(DEFAULT_MAX_LENGTH) 
+senderId String required maxlength(DEFAULT_MAX_LENGTH) 
+message String required maxlength(DEFAULT_MAX_LENGTH) 
+fileTitle String required maxlength(DEFAULT_MAX_LENGTH) 
+filePath String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity WebinarAssignmentTranslations{
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+webinarAssignment String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+description String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity WebinarAssignments{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+creator String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+chapter String required maxlength(DEFAULT_MAX_LENGTH) 
+grade String required maxlength(DEFAULT_MAX_LENGTH) 
+passGrade String required maxlength(DEFAULT_MAX_LENGTH) 
+deadline String required maxlength(DEFAULT_MAX_LENGTH) 
+attempts String required maxlength(DEFAULT_MAX_LENGTH) 
+checkPreviousParts String required maxlength(DEFAULT_MAX_LENGTH) 
+accessAfterDay String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity WebinarChapterItems{
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+chapter String required maxlength(DEFAULT_MAX_LENGTH) 
+itemId String required maxlength(DEFAULT_MAX_LENGTH) 
+type String required maxlength(DEFAULT_MAX_LENGTH) 
+order String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity WebinarChapterTranslations{
+webinarChapter String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity WebinarChapters{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+user String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+order String required maxlength(DEFAULT_MAX_LENGTH) 
+checkAllContentsPass String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity WebinarExtraDescriptionTranslations{
+webinarExtraDescription String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+value String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity WebinarExtraDescriptions{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+creator String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+upcomingCourse String required maxlength(DEFAULT_MAX_LENGTH) 
+type String required maxlength(DEFAULT_MAX_LENGTH) 
+order String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity WebinarFilterOption{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+filterOption String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity WebinarPartnerTeacher{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+teacher String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity WebinarReports{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+userId String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+reason String required maxlength(DEFAULT_MAX_LENGTH) 
+message String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity WebinarReviews{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+creator String required maxlength(DEFAULT_MAX_LENGTH) 
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+bundle String required maxlength(DEFAULT_MAX_LENGTH) 
+contentQuality String required maxlength(DEFAULT_MAX_LENGTH) 
+instructorSkills String required maxlength(DEFAULT_MAX_LENGTH) 
+purchaseWorth String required maxlength(DEFAULT_MAX_LENGTH) 
+supportQuality String required maxlength(DEFAULT_MAX_LENGTH) 
+rates String required maxlength(DEFAULT_MAX_LENGTH) 
+description String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity WebinarTranslations{
+webinar String required maxlength(DEFAULT_MAX_LENGTH) 
+locale String required maxlength(DEFAULT_MAX_LENGTH) 
+title String required maxlength(DEFAULT_MAX_LENGTH) 
+seoDescription String required maxlength(DEFAULT_MAX_LENGTH) 
+description String required maxlength(DEFAULT_MAX_LENGTH) 
+
+}
+
+entity Webinars{
+id String required maxlength(DEFAULT_MAX_LENGTH) 
+teacher String required maxlength(DEFAULT_MAX_LENGTH) 
+creator String required maxlength(DEFAULT_MAX_LENGTH) 
+category String required maxlength(DEFAULT_MAX_LENGTH) 
+type String required maxlength(DEFAULT_MAX_LENGTH) 
+private String required maxlength(DEFAULT_MAX_LENGTH) 
+slug String required maxlength(DEFAULT_MAX_LENGTH) 
+startDate String required maxlength(DEFAULT_MAX_LENGTH) 
+duration String required maxlength(DEFAULT_MAX_LENGTH) 
+timezone String required maxlength(DEFAULT_MAX_LENGTH) 
+thumbnail String required maxlength(DEFAULT_MAX_LENGTH) 
+imageCover String required maxlength(DEFAULT_MAX_LENGTH) 
+videoDemo String required maxlength(DEFAULT_MAX_LENGTH) 
+videoDemoSource String required maxlength(DEFAULT_MAX_LENGTH) 
+capacity String required maxlength(DEFAULT_MAX_LENGTH) 
+price String required maxlength(DEFAULT_MAX_LENGTH) 
+organizationPrice String required maxlength(DEFAULT_MAX_LENGTH) 
+support String required maxlength(DEFAULT_MAX_LENGTH) 
+certificate String required maxlength(DEFAULT_MAX_LENGTH) 
+downloadable String required maxlength(DEFAULT_MAX_LENGTH) 
+partnerInstructor String required maxlength(DEFAULT_MAX_LENGTH) 
+subscribe String required maxlength(DEFAULT_MAX_LENGTH) 
+forum String required maxlength(DEFAULT_MAX_LENGTH) 
+enableWaitlist String required maxlength(DEFAULT_MAX_LENGTH) 
+accessDays String required maxlength(DEFAULT_MAX_LENGTH) 
+points String required maxlength(DEFAULT_MAX_LENGTH) 
+messageForReviewer String required maxlength(DEFAULT_MAX_LENGTH) 
+status String required maxlength(DEFAULT_MAX_LENGTH) 
+createdAt String required maxlength(DEFAULT_MAX_LENGTH) 
+updatedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+deletedAt String required maxlength(DEFAULT_MAX_LENGTH) 
+}
+
+
+relationship ManyToOne {
+Accounting to InstallmentOrderPayments
+AdvertisingBannersTranslations to AdvertisingBanners
+Affiliates to Users
+Affiliates to Users
+AffiliatesCodes to Users
+AgoraHistory to Sessions
+BadgeTranslations to Badges
+Blog to BlogCategories
+BlogTranslations to Blog
+BundleFilterOption to Bundles
+BundleFilterOption to FilterOptions
+BundleTranslations to Bundles
+BundleWebinars to Bundles
+BundleWebinars to Webinars
+Bundles to Users
+Bundles to Users
+Bundles to Categories
+Cart to Users
+Cart to Webinars
+Cart to Bundles
+Cart to ProductOrders
+Cart to ReserveMeetings
+Cart to Subscribes
+Cart to Promotions
+Cart to Gifts
+Cart to Tickets
+Cart to SpecialOffers
+Cart to ProductDiscounts
+Cart to InstallmentOrderPayments
+CategoryTranslations to Categories
+CertificateTemplateTranslations to CertificatesTemplates
+Certificates to Quizzes
+Certificates to QuizzesResults
+Certificates to Users
+Certificates to Webinars
+Comments to Users
+Comments to WebinarReviews
+Comments to Webinars
+Comments to Bundles
+Comments to UpcomingCourses
+Comments to Products
+Comments to Comments
+CommentsReports to Products
+CommentsReports to Comments
+CourseForumAnswers to CourseForums
+CourseForumAnswers to Users
+CourseForums to Webinars
+CourseForums to Users
+CourseLearning to Users
+CourseLearning to TextLessons
+CourseLearning to Files
+CourseLearning to Sessions
+CourseNoticeboardStatus to CourseNoticeboards
+CourseNoticeboards to Users
+CourseNoticeboards to Webinars
+DiscountCategories to Discounts
+DiscountCategories to Categories
+DiscountCourses to Discounts
+DiscountCourses to Webinars
+DiscountGroups to Discounts
+DiscountGroups to Groups
+DiscountUsers to Discounts
+DiscountUsers to Users
+Discounts to Users
+FaqTranslations to Faqs
+Faqs to Users
+Faqs to Webinars
+Faqs to Bundles
+Faqs to UpcomingCourses
+Favorites to Users
+Favorites to Webinars
+Favorites to Bundles
+Favorites to UpcomingCourses
+FeatureWebinarTranslations to FeatureWebinars
+FeatureWebinars to Webinars
+FileTranslations to Files
+Files to Users
+Files to Webinars
+Files to WebinarChapters
+FilterOptionTranslations to FilterOptions
+FilterOptions to Filters
+FilterTranslations to Filters
+Filters to Categories
+Follows to Users
+Follows to Users
+ForumFeaturedTopics to ForumTopics
+ForumRecommendedTopicItems to ForumRecommendedTopics
+ForumRecommendedTopicItems to ForumTopics
+ForumTopicAttachments to Users
+ForumTopicAttachments to ForumTopics
+ForumTopicBookmarks to Users
+ForumTopicBookmarks to ForumTopics
+ForumTopicLikes to Users
+ForumTopicLikes to ForumTopics
+ForumTopicLikes to ForumTopicPosts
+ForumTopicPosts to Users
+ForumTopicPosts to ForumTopics
+ForumTopicPosts to ForumTopicPosts
+ForumTopicReports to Users
+ForumTopicReports to ForumTopics
+ForumTopicReports to ForumTopicPosts
+ForumTopics to Users
+ForumTopics to Forums
+ForumTranslations to Forums
+Forums to Roles
+Forums to Groups
+Gifts to Users
+Gifts to Webinars
+Gifts to Bundles
+Gifts to Products
+GroupUsers to Groups
+GroupUsers to Users
+Groups to Users
+GroupsRegistrationPackages to Groups
+InstallmentOrderAttachments to InstallmentOrders
+InstallmentOrderPayments to InstallmentOrders
+InstallmentOrderPayments to Sales
+InstallmentOrderPayments to InstallmentSteps
+InstallmentOrders to Installments
+InstallmentOrders to Users
+InstallmentOrders to Webinars
+InstallmentOrders to Products
+InstallmentOrders to Bundles
+InstallmentOrders to Subscribes
+InstallmentOrders to RegistrationPackages
+InstallmentOrders to ProductOrders
+InstallmentSpecificationItems to Installments
+InstallmentSpecificationItems to Categories
+InstallmentSpecificationItems to Users
+InstallmentSpecificationItems to Users
+InstallmentSpecificationItems to Webinars
+InstallmentSpecificationItems to Products
+InstallmentSpecificationItems to Bundles
+InstallmentSpecificationItems to Subscribes
+InstallmentSpecificationItems to RegistrationPackages
+InstallmentStepTranslations to InstallmentSteps
+InstallmentSteps to Installments
+InstallmentTranslations to Installments
+InstallmentUserGroups to Installments
+InstallmentUserGroups to Groups
+MeetingTimes to Meetings
+Meetings to Users
+Meetings to Users
+NavbarButtonTranslations to NavbarButtons
+NavbarButtons to Roles
+Noticeboards to Users
+Noticeboards to Users
+Noticeboards to Webinars
+Noticeboards to Users
+NoticeboardsStatus to Noticeboards
+Notifications to Users
+Notifications to Groups
+Notifications to Webinars
+NotificationsStatus to Notifications
+OfflineBankSpecificationTranslations to OfflineBankSpecifications
+OfflineBankSpecifications to OfflineBanks
+OfflineBankTranslations to OfflineBanks
+OfflinePayments to Users
+OfflinePayments to OfflineBanks
+OrderItems to Users
+OrderItems to Orders
+OrderItems to Webinars
+OrderItems to Subscribes
+OrderItems to Promotions
+OrderItems to Gifts
+OrderItems to ReserveMeetings
+OrderItems to Tickets
+Orders to Users
+PageTranslations to Pages
+Payouts to Users
+Payouts to UserSelectedBanks
+Permissions to Roles
+Permissions to Sections
+Prerequisites to Webinars
+Prerequisites to Webinars
+ProductCategoryTranslations to ProductCategories
+ProductDiscounts to Users
+ProductDiscounts to Products
+ProductFaqTranslations to ProductFaqs
+ProductFaqs to Users
+ProductFaqs to Products
+ProductFileTranslations to ProductFiles
+ProductFiles to Users
+ProductFiles to Products
+ProductFilterOptionTranslations to ProductFilterOptions
+ProductFilterOptions to ProductFilters
+ProductFilterTranslations to ProductFilters
+ProductFilters to ProductCategories
+ProductMedia to Users
+ProductMedia to Products
+ProductOrders to InstallmentOrders
+ProductOrders to Gifts
+ProductReviews to Products
+ProductReviews to Users
+ProductSelectedFilterOptions to Products
+ProductSelectedFilterOptions to ProductFilterOptions
+ProductSelectedSpecificationMultiValues to ProductSelectedSpecifications
+ProductSelectedSpecificationMultiValues to ProductSpecificationMultiValues
+ProductSelectedSpecificationTranslations to ProductSelectedSpecifications
+ProductSelectedSpecifications to Users
+ProductSelectedSpecifications to Products
+ProductSelectedSpecifications to ProductSpecifications
+ProductSpecificationCategories to ProductSpecifications
+ProductSpecificationCategories to ProductCategories
+ProductSpecificationMultiValueTranslations to ProductSpecificationMultiValues
+ProductSpecificationMultiValues to ProductSpecifications
+ProductSpecificationTranslations to ProductSpecifications
+ProductTranslations to Products
+Products to Users
+Products to ProductCategories
+PromotionTranslations to Promotions
+Purchases to Webinars
+Purchases to Users
+QuizQuestionTranslations to QuizzesQuestions
+QuizTranslations to Quizzes
+Quizzes to Webinars
+Quizzes to Users
+Quizzes to WebinarChapters
+QuizzesQuestions to Quizzes
+QuizzesQuestions to Users
+QuizzesQuestionsAnswerTranslations to QuizzesQuestionsAnswers
+QuizzesQuestionsAnswers to Users
+QuizzesQuestionsAnswers to QuizzesQuestions
+QuizzesResults to Quizzes
+QuizzesResults to Users
+Regions to Regions
+Regions to Regions
+Regions to Regions
+RegistrationPackagesTranslations to RegistrationPackages
+ReserveMeetings to MeetingTimes
+ReserveMeetings to Users
+ReserveMeetings to Sales
+Sales to Users
+Sales to Users
+Sales to Orders
+Sales to Webinars
+Sales to Meetings
+Sales to Tickets
+Sales to Promotions
+Sales to InstallmentOrderPayments
+SalesLog to Sales
+SessionReminds to Sessions
+SessionReminds to Users
+SessionTranslations to Sessions
+SettingTranslations to Settings
+SpecialOffers to Users
+SpecialOffers to Webinars
+SpecialOffers to Bundles
+SpecialOffers to Subscribes
+SpecialOffers to RegistrationPackages
+SubscribeReminds to Users
+SubscribeReminds to Subscribes
+SubscribeTranslations to Subscribes
+SubscribeUses to Users
+SubscribeUses to Subscribes
+SubscribeUses to Webinars
+SubscribeUses to Bundles
+SubscribeUses to Sales
+SubscribeUses to InstallmentOrders
+SupportConversations to Supports
+SupportConversations to Users
+SupportConversations to Users
+SupportDepartmentTranslations to SupportDepartments
+Supports to Users
+Supports to Webinars
+Supports to SupportDepartments
+Tags to Webinars
+Tags to Bundles
+Tags to UpcomingCourses
+TestimonialTranslations to Testimonials
+TextLessonTranslations to TextLessons
+TextLessons to Users
+TextLessons to Webinars
+TextLessons to WebinarChapters
+TextLessonsAttachments to TextLessons
+TextLessonsAttachments to Files
+TicketTranslations to Tickets
+TicketUsers to Tickets
+TicketUsers to Users
+Tickets to Users
+Tickets to Webinars
+Tickets to Bundles
+TrendCategories to Categories
+UpcomingCourseFilterOption to UpcomingCourses
+UpcomingCourseFilterOption to FilterOptions
+UpcomingCourseFollowers to UpcomingCourses
+UpcomingCourseFollowers to Users
+UpcomingCourseReports to UpcomingCourses
+UpcomingCourseReports to Users
+UpcomingCourseTranslations to UpcomingCourses
+UpcomingCourses to Users
+UpcomingCourses to Users
+UpcomingCourses to Categories
+UpcomingCourses to Webinars
+UserBankSpecificationTranslations to UserBankSpecifications
+UserBankSpecifications to UserBanks
+UserBankTranslations to UserBanks
+UserSelectedBankSpecifications to UserSelectedBanks
+UserSelectedBankSpecifications to UserBankSpecifications
+UserSelectedBanks to Users
+UserSelectedBanks to UserBanks
+Users to Regions
+Users to Regions
+Users to Regions
+Users to Regions
+UsersBadges to Users
+UsersBadges to Badges
+UsersCookieSecurity to Users
+UsersMetas to Users
+UsersOccupations to Users
+UsersOccupations to Categories
+UsersRegistrationPackages to Users
+UsersZoomApi to Users
+Verifications to Users
+WebinarAssignmentAttachments to WebinarAssignments
+WebinarAssignmentHistory to Users
+WebinarAssignmentHistory to Users
+WebinarAssignmentHistory to WebinarAssignments
+WebinarAssignmentHistoryMessages to WebinarAssignmentHistory
+WebinarAssignmentTranslations to WebinarAssignments
+WebinarAssignments to Users
+WebinarAssignments to Webinars
+WebinarAssignments to WebinarChapters
+WebinarChapterItems to Users
+WebinarChapterItems to WebinarChapters
+WebinarChapterTranslations to WebinarChapters
+WebinarChapters to Users
+WebinarChapters to Webinars
+WebinarExtraDescriptionTranslations to WebinarExtraDescriptions
+WebinarExtraDescriptions to Users
+WebinarExtraDescriptions to Webinars
+WebinarExtraDescriptions to UpcomingCourses
+WebinarFilterOption to Webinars
+WebinarFilterOption to FilterOptions
+WebinarPartnerTeacher to Webinars
+WebinarPartnerTeacher to Users
+WebinarReports to Webinars
+WebinarReviews to Users
+WebinarReviews to Webinars
+WebinarReviews to Bundles
+WebinarTranslations to Webinars
+Webinars to Users
+Webinars to Users
+Webinars to Categories
+}
+
+
+
+
+// Set pagination options
+paginate all with pagination
+
+// Use Data Transfer Objects (DTO)
+
+
+
+filter all
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
